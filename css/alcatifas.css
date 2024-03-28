@@ -1,0 +1,64 @@
+
+  .carousel-item img {
+    width: 100%;
+    height: 500px;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
+  #carousel-thumbs img {
+    border: 5px solid transparent;
+    cursor: pointer;
+  }
+  #carousel-thumbs img:hover {
+    border-color: rgba(255,255,255,.3);
+  }
+  #carousel-thumbs .selected img {
+    border-color: #fff;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+
+  #carousel-thumbs img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 600px) {
+    #carousel-thumbs img{
+        width: 100%;
+        height: 100%;
+      }
+  }
+
+  .link-active {
+    text-decoration: underline;
+  }
+
+ .bg-galeria {
+    position: relative; /* Define a posição relativa para que os elementos posicionados absolutamente fiquem relativos a este elemento */
+    background-image: url("/img/bg-galeria.jpg");
+    background-position: center;
+}
+
+
+@media (max-width: 1000px){
+  .container-alcatifas {
+    display: grid;
+    justify-content: center;
+  }
+
+  .carousel-container{
+   padding-top: 40px;
+  }
+
+}
+
+
+.container-alcatifas img {
+  width: 100%;
+}

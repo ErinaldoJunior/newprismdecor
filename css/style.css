@@ -1,9 +1,26 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1acc8d;
+    --primary: #0d0d0d;
     --secondary: #5F656F;
-    --light: #F5F5F5;
-    --dark: #02245B;
+    --light: #0d0d0d;
+    --dark: #26010B;
+}
+
+.bg-dark {
+    background-color: #400F1C;
+}
+
+.bg-primary {
+    background-color: #400F1C;
+
+}
+
+.text-primary {
+    color:#BF045B;
+}
+
+.text-black {
+    color:#0d0d0d;
 }
 
 .back-to-top {
@@ -120,7 +137,6 @@ h6,
     height: 75px;
     display: flex;
     align-items: center;
-    background: var(--primary);
 }
 
 
@@ -132,7 +148,6 @@ h6,
     top: 0;
     right: -25px;
     transform: skewX(-30deg);
-    background-color: var(--primary);
 }
 
 .navbar .navbar-nav .nav-link {
@@ -192,7 +207,8 @@ h6,
 /*** Header ***/
 
 .logo {
-    width: 70px;
+    width: 220px;
+    padding-left: 10px;
 }
 .carousel-caption {
     top: 0;
@@ -201,7 +217,7 @@ h6,
     bottom: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%);
+    background: linear-gradient(to right, #400F1C 0%, rgba(2, 36, 91, 0) 100%);
     z-index: 1;
 }
 
@@ -234,7 +250,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(to right, #400F1C 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -427,7 +443,7 @@ h6,
     display: flex;
     align-items: center;
     text-align: center;
-    background: rgba(2, 36, 91, .7);
+    background: #400F1C;
     transition: .5s;
 }
 
@@ -695,7 +711,7 @@ h6,
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--light);
+    color: #BF045B;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -703,4 +719,47 @@ h6,
 .copyright {
     color: #B0B9AE;
     border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+/** COOKIES **/
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+#cookies {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: #26010B;
+    z-index: 9999;
+    display: none;
+}
+
+#cookies-btn {
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #BF045B;
+}
+
+.cookies {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 1024px) {
+    .cookies {
+        padding: 10px 0;
+    }
 }
