@@ -758,3 +758,7 @@ h6,
     padding: 10px 0;
   }
 }
+
+.collapse {
+  visibility: inherit !important;
+}
